@@ -7,3 +7,7 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 #if GNOME desktop env, then install GNOME Shell Extensions
 if pgrep -x "gnome-shell" > /dev/null; then
   sudo apt install gnome-tweaks
+  sudo apt install gnome-shell-extensions
+#Open Battery Health Charging website
+  gnome-open https://extensions.gnome.org/extension/5724/battery-health-charging/
+  fi
