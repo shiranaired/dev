@@ -1,2 +1,9 @@
 #install vim
 sudo apt install vim
+
+#install NordVPN
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+
+#if GNOME desktop env, then install GNOME Shell Extensions
+if pgrep -x "gnome-shell" > /dev/null; then
+  sudo apt install gnome-tweaks
